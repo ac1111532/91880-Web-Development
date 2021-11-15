@@ -150,7 +150,7 @@
     padding: 100px 20vw;
 }
 
-
+/* Most of this controls the scrolling transitions of the slides, and its duplicated for each slide, so they are all animated.*/
 .cont {
     position: relative;
     height: 100vh;

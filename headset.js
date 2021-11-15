@@ -15,6 +15,7 @@ $(document).ready(function () {
     let numOfHeadsets = arrHeadsets.length;
     let arrHeadsetsDivided = [];
   
+    //Math about the length and width of the slides
     arrHeadsets.map(headset => {
       let length = headset.length;
       let letters = Math.floor(length / 4);
@@ -23,6 +24,7 @@ $(document).ready(function () {
       arrHeadsetsDivided.push(headset.match(exp));
     });
   
+    //This script generates the slides that the information will be shown on, based on the data given in the above array/s. It also gives it animations that are then set over the code.
     let generateSlide = function (headset) {
       let frag1 = $(document.createDocumentFragment());
       let frag2 = $(document.createDocumentFragment());
@@ -97,6 +99,7 @@ $(document).ready(function () {
   
     }
   
+    //This script translates the scroll function on your mouse into a trigger for the slides to move.
     function navigateRight() {
       if (!autoScrollVar) return;
       if (curSlide >= numOfHeadsets) return;
@@ -163,13 +166,14 @@ $(document).ready(function () {
       }
     });
   
+    //This makes it so you can click on the sides of the page to cycle the slides.
     $(document).on('click', '.nav__slide:not(.nav-active)', function () {
       let target = +$(this).attr('data-target');
       bullets(target);
       curSlide = target;
       pagination(1);
     });
-  
+    //Allows arrow keys to controll slides.
     $(document).on('click', '.side-nav', function () {
       let target = $(this).attr('data-target');
   
@@ -182,6 +186,8 @@ $(document).ready(function () {
       if (e.which === 37) navigateLeft();
     });
   
+
+    //More mousewheel scripting
     $(document).on('mousewheel DOMMouseScroll', function (e) {
       if (animation) return;
       let delta = e.originalEvent.wheelDelta;

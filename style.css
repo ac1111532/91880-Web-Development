@@ -149,7 +149,7 @@
     min-height: 400px;
     padding: 100px 20vw;
 }
-
+/* This ends up not being used but is added as a redundancy */
 .Welcome {
   background: #1b2735;
   margin: 0;
@@ -157,6 +157,8 @@
   font-family: 'Roboto', sans-serif; 
   color: white;
 }
+
+/* This code is from a prevous generation of my button animations, but it broke when it was used in the new format */
 
 .Scroll {
   overflow: hidden;
@@ -273,6 +275,8 @@ html {
   box-shadow: 430px 544px #FFF , 1076px 1283px #FFF , 1787px 1178px #FFF , 894px 1124px #FFF , 1051px 686px #FFF , 168px 1154px #FFF , 1343px 1633px #FFF , 137px 1016px #FFF , 1790px 1785px #FFF , 969px 1223px #FFF , 1930px 914px #FFF , 284px 1149px #FFF , 76px 1305px #FFF , 781px 1839px #FFF , 1234px 281px #FFF , 1095px 1989px #FFF , 368px 894px #FFF , 1867px 838px #FFF , 710px 338px #FFF , 1282px 671px #FFF , 409px 1043px #FFF , 295px 909px #FFF , 1278px 599px #FFF , 696px 905px #FFF , 140px 60px #FFF , 1567px 162px #FFF , 1074px 831px #FFF , 1264px 623px #FFF , 530px 1433px #FFF , 1782px 255px #FFF , 757px 1976px #FFF , 1125px 327px #FFF , 1932px 390px #FFF , 456px 734px #FFF , 1053px 1308px #FFF , 812px 15px #FFF , 1897px 1700px #FFF , 1755px 1512px #FFF , 1155px 944px #FFF , 1281px 1871px #FFF , 798px 1068px #FFF , 1199px 1061px #FFF , 356px 1196px #FFF , 1296px 941px #FFF , 1086px 1778px #FFF , 1154px 1631px #FFF , 684px 715px #FFF , 833px 647px #FFF , 88px 621px #FFF , 753px 1916px #FFF , 1728px 809px #FFF , 1540px 1686px #FFF , 1520px 268px #FFF , 1401px 1438px #FFF , 206px 1827px #FFF , 1053px 252px #FFF , 1630px 1541px #FFF , 718px 1553px #FFF , 1672px 1395px #FFF , 639px 1308px #FFF , 364px 1032px #FFF , 1116px 1534px #FFF , 853px 529px #FFF , 583px 1840px #FFF , 1958px 846px #FFF , 1960px 102px #FFF , 1760px 912px #FFF , 1365px 772px #FFF , 1604px 545px #FFF , 1085px 805px #FFF , 32px 1076px #FFF , 351px 159px #FFF , 483px 1836px #FFF , 856px 441px #FFF , 538px 311px #FFF , 1211px 960px #FFF , 735px 1884px #FFF , 1712px 294px #FFF , 1058px 1054px #FFF , 576px 527px #FFF , 1640px 1777px #FFF , 871px 776px #FFF , 546px 831px #FFF , 1726px 1840px #FFF , 165px 1839px #FFF , 559px 398px #FFF , 1960px 584px #FFF , 184px 570px #FFF , 694px 418px #FFF , 915px 1581px #FFF , 579px 1576px #FFF , 1402px 142px #FFF , 1325px 480px #FFF , 629px 1425px #FFF , 470px 45px #FFF , 522px 1196px #FFF , 333px 1931px #FFF , 260px 1866px #FFF , 1728px 848px #FFF , 1595px 379px #FFF;
 }
 
+/* This generates the text that is seen on the main menu, infront of the slides. */
+
 #title {
   position: absolute;
   top: 50%;
@@ -293,6 +297,7 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+/* This animates the stars that were created earlier so they go up the webpage, and twinkle a bit */
 @keyframes animStar {
   from {
     transform: translateY(0px);

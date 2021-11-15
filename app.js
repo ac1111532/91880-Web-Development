@@ -1,3 +1,5 @@
+//These are listners that watch for when the mobile menu is opened, then triggers the css script to open or close the navbar.
+
 const doc = document;
 const menuOpen = doc.querySelector(".menu");
 const menuClose = doc.querySelector(".close");
